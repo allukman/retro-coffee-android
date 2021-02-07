@@ -6,6 +6,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.view.WindowManager
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.observe
 import com.id124.retrocoffee.R
 import com.id124.retrocoffee.base.BaseActivity
 import com.id124.retrocoffee.databinding.ActivityEditPasswordBinding
@@ -27,7 +28,7 @@ class EditPasswordActivity : BaseActivity<ActivityEditPasswordBinding>(), View.O
 
     override fun onClick(v: View?) {
         when(v?.id) {
-            R.id.btn_change_password -> {
+            R.id.btn_change_phiassword -> {
                 when {
                     !valPassword(bind.inputLayoutOldPassword, bind.etOldPassword) -> {
                     }
